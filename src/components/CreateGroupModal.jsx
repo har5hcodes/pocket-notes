@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import styles from "../styles/CreateGroupModal.module.css";
 import SelectColor from "./SelectColor";
 
