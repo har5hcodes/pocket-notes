@@ -1,0 +1,87 @@
+.container {
+  position: relative;
+  width: 35%;
+  height: 28%;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.createBtn {
+  background-color: black;
+  width: 7rem;
+  height: 2rem;
+  font-weight: 400;
+  color: white;
+  border-radius: 0.4rem;
+  border: none;
+  text-align: center;
+}
+
+.inputField {
+  width: 70%;
+  height: 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid #cccccc;
+  padding: 1rem 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #979797;
+}
+
+.textstyle {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.colorPicker {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.rowContainer {
+  display: flex;
+  width: 100%;
+  padding: 0 3rem;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a dull background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+    height: 250px;
+  }
+  .inputField {
+    width: 60%;
+  }
+  .rowContainer {
+    padding: 0;
+    gap: 0.5rem;
+  }
+  .colorPicker {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
